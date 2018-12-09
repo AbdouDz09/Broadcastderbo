@@ -72,9 +72,9 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       d!obc | لأرسال برود كاست للكل
+       d!bc | لأرسال برود كاست للكل
 
-       d!bc  |  لأرسال برود كاست للأونلاين
+       d!obc  |  لأرسال برود كاست للأونلاين
 
        d!support | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
@@ -87,7 +87,7 @@ m.sendMessage(args)
     if (message.content === "d!support") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/  `)
+         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/qpMhHAD  `)
      message.author.send({embed});
    
     }
