@@ -87,27 +87,7 @@ m.sendMessage(args)
 
 
 
-   client.on('message', message => {
-    if (message.content.startsWith("+bot")) {
-    message.channel.send({
-        embed: new Discord.RichEmbed()
-            .setAuthor(client.user.username,client.user.avatarURL)
-            .setThumbnail(client.user.avatarURL)
-            .setColor('RANDOM')
-            .setTitle('``INFO Broadcast Bot`` ')
-            .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
-            .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
-            .addField('``servers``', [client.guilds.size], true)
-            .addField('``channels``' , `[ ${client.channels.size} ]` , true)
-            .addField('``Users``' ,`[ ${client.users.size} ]` , true)
-            .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
-            .addField('``My Prefix``' , `[d!]` , true)
-            .addField('``My owner``' , `[@AbdouFERSAOUI_Dz 👻็็็็็็็็็#5217]` , true)
 
-        
-                    })
-}
-});
 
 client.on('ready', () => {
    console.log(`----------------`);
