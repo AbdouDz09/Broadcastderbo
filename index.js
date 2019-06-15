@@ -70,11 +70,13 @@ m.sendMessage(args)
      const embed = new Discord.RichEmbed() 
          .setColor("RANDOM")
          .setThumbnail(message.author.avatarURL)
-         .setDescription(`**Help|هيلب**`)
+         .setDescription(`**Help|هيلب
 
        +bc | لأرسال برود كاست للكل
 
        +obc  |  لأرسال برود كاست للأونلاين
+     
+       **`)
 
    message.author.sendEmbed(embed)
    
